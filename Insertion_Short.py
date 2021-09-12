@@ -6,6 +6,8 @@
 
 # Insertion Sort
 
+# If element before is bigger then it will move right
+
 A = [5,2,4,6,1,3,3,2,3,45,3,2,3,434,3,45,54,5,45,4,5,4,23,43,4,35]
 
 
