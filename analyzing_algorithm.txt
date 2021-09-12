@@ -1,1 +1,10 @@
 https://www.youtube.com/watch?v=-gN6KCS_D4k
+
+
+Primitive Operations:
+- Assignment
+- Calculation
+- Indexing
+- Calling/Return
+
+Primitive Operations take unit time(1 Unit of Time) to complete
