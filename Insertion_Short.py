@@ -43,3 +43,17 @@ for j in range(1,len(A)):
     A[i+1] = key
     
 print(A)
+
+# Insertion Practice 3
+
+for index in range(1,len(A)):
+    value = A[index]
+    hole = index
+
+    while (hole>0 and A[hole-1]>value):
+        A[hole] = A[hole-1]
+        hole -= 1
+    
+    A[hole] = value
+
+print(A)
