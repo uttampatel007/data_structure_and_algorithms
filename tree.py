@@ -20,7 +20,10 @@ class TreeNode:
     def print_tree(self):
         data = " " * self.get_level() * 3 + "|--" + f"{self.data}"
         print(data)
+        # level = 0
         for child in self.children:
+            # if level == self.get_level():
+                # break
             child.print_tree()
 
 def build_product_tree():
