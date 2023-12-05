@@ -55,7 +55,49 @@ for test in tests:
     assert test['output'] == result
 
 
+# rotating list 
 
+nums = [6,7,8,9,10,11,1,2,3,4,5]
+output = 6
+
+# def count_rotation_linear(nums):
+#     position = 0
+    
+#     while position < len(nums):
+#         if position > 0 and nums[position] < nums[position-1]:
+#             return position
+            
+#         position += 1 
+        
+#     return 0
+
+
+def count_rotation_binary(nums):
+  lo = 0
+  hi = len(nums) - 1
+  
+  while hi >= lo:
+    mid = (hi+lo)//2
+    mid_num = nums[mid]
+    
+    if mid > 0 and mid_num < nums[mid-1]:
+      return mid
+    
+    elif mid_num > nums[hi]:
+      lo = mid + 1
+      
+    elif mid_num < nums[hi]:
+      hi = mid - 1
+      
+  return 0
+  
+    
+  
+    
+# result = count_rotation_linear(nums)
+result = count_rotation_binary(nums)
+print(result)
+assert result == output
 
 
 
